@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Yomogi&display=swap");
+
+:root {
+  --background-color: #489cc1;
+  --primary-color: #59a3c8;
+  --background-tasks: #f0f9ff;
+  --text-color: #545555;
+
+  --margin-left: 3em;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  background-color: #489cc1;
+}
+
+.App {
+  font-family: "Yomogi", cursive;
+  width: 100%;
+
+  .toDoList {
+    width: 60%;
+    margin: 2em 6em;
+    background-color: rgb(255, 255, 255);
+    padding: 2em 4em;
+
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      color: var(--text-color);
+      font-size: 1.8em;
+      padding: 0.4em;
+      margin: 0;
+    }
+
+    .taskAdd {
+      text-align: center;
+      input[type="text"] {
+        text-align: center;
+        width: 60%;
+        padding: 0.5em;
+        font-style: italic;
+        border: 2px solid var(--primary-color);
+      }
+
+      button {
+        position: relative;
+        background-color: var(--primary-color);
+        border: 0px;
+        color: white;
+        width: 10%;
+        padding: 0.6em;
+        margin-left: 0.2em;
+
+        &:hover {
+          background-color: white;
+          color: var(--primary-color);
+          border: 2px solid var(--primary-color);
+        }
+      }
+    }
+    .taskList {
+      text-align: center;
+      margin: 0.7em 3em;
+      .task {
+        input[type="text"] {
+          border: 0;
+          background-color: white;
+          font-style: italic;
+          width: 65%;
+          color: var(--primary-color);
+          font-size: large;
+          font-family: "Yomogi", cursive;
+
+          &:active {
+            border: 2px solid var(--primary-color);
+          }
+        }
+        button {
+          padding: 0.2em;
+          background-color: var(--primary-color);
+          border: 0;
+          margin: 0.2em;
+          color: white;
+          font-family: "Yomogi", cursive;
+
+          &:hover {
+            background-color: white;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+          }
+        }
+      }
+    }
+
+    .footer {
+      margin: 0.7em;
+      h3 {
+        margin: 0 6em;
+      }
+    }
+  }
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.editable {
+  border: 2px solid var(--primary-color);
+}

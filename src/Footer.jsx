@@ -1,7 +1,7 @@
 
 function Footer({totalDone, total}){
     return(
-        <div>
+        <div className="footer">
             <h3>{totalDone} out of {total} tasks done</h3>
         </div>
     );

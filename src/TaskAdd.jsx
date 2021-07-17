@@ -3,7 +3,7 @@ import uuid from "react-uuid";
 function TaskAdd({newTask, setNewTask, tasks, setTasks}){
 
     return(
-        <form>
+        <form className="taskAdd">
             <input onChange={e => setNewTask({value: e.target.value, uid: uuid()})} type="text" placeholder="what needs to be done?" value={newTask.value}/>
             <button onClick={e => {
                 e.preventDefault();
